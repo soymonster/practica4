@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta autor="LUIS MIGUEL CHAMBI MAMANI">
+    <title>EMERGENTES</title>
+    <style type="text/css">
+    	html,body{
+    		margin:0px;
+    		padding: 0px;
+    		font-family: Tahoma, Arial, Serif;
+    		font-size: small;
+    		background: #F9F9F9;
+    	}
+    	#contenedor{
+    		width: 960px;
+    		margin: auto;
+    	}
+    	h2{
+    		font-size: 180%;
+    		font-weight: normal;
+    	}
+    	h3{
+    		font-size: 120%;
+    	}
+    	header{
+    		display: block;
+    		background: pink;
+    	}
+    	nav{
+    		background: maroon;
+    	}
+    	nav li{
+    		display: inline-block;
+    	}
+    	nav li a{
+    		display: block;
+    		margin-right: 5px;
+    		padding: 10px;
+    		color: yellow;
+    		text-decoration: none;
+    	}
+    	a.activo{
+    		background: #999;
+    	}
+    	section{
+    		width: 79%;
+    		background: #eee;
+    		float: left;
+    		overflow: auto;
+    		padding-bottom: 60px;
+    		padding-top: 30px;
+    	}
+    	article .info{
+    		margin: 10px 0;
+    		padding-bottom: 8px;
+    		border-bottom: 1px solid black;
+    		color: red;
+    	}
+    	article .info{
+    		color: red;
+    	}
+    	article .info a:hover{
+    		color: #ff9000;
+    	}
+    	article .info span.fecha, article .info span .categoria,
+    	article .info span.autor, article .info span.comentarios{
+    		padding-left: 15px;
+    	}
+    	article .info span.fecha{
+    		background: url("icono_fecha.gif") 0 50% no-repeat;
+    	}
+    	article .info span.categoria{
+    		background: url("icono_categoria.gif") 0 50% no-repeat;
+            padding-left: 15px;
+    		margin-left: 8px;
+    	}
+    	article .info span.autor{
+    		background: url("icono_autor.gif") 0 50% no-repeat;
+    		margin-left: 8px;
+    	}
+    	article .info span.comentarios{
+    		background: url("icono_comentarios.gif") 0 50% no-repeat;
+    		margin-left: 8px;
+    	}
+    	aside{
+    		background: orangered;
+    		float: right;
+    		width: 19%;
+    	}
+    	aside h3{
+    		display: block;
+    		background: black;
+    		color: white;
+    		padding-left: 10px;
+    	}
+    	footer{
+    		position: relative;
+    		height: 40px;
+    		clear: both;
+    	}
+    	footer p{
+    		background: #000;
+    		color: red;
+    		padding: 10px;
+    		text-align: center;
+    	}
+    	figure{
+    		display: table;
+    		margin: 0 auto;
+    		width: 150px;
+    	}
+    </style>
+</head>
+<body>
+<div id="contenedor">
+    <!-- Cabecera -->
+    <header>
+        <img src="logo.png" alt="logo"  />
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Quien soy</a></li>
+            <li><a href="#" class="activo">Blog</a></li>
+            <li><a href="#">Contactame</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido -->
+    <section>
+        <article>
+            <h2><a href="#">Lorem ipsum dolor sit amet</a></h2>
+            <p class="info">
+                <span class="fecha">dd-mm-aaaa</span>
+                <span class="categoria"><a href="#">diseño</a></span>
+                <span class="autor"><a href="#">Nombre Apellido</a></span>
+                <span class="comentarios"><a href="#">Añadir comentario</a></span>
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam pellentesque enim blandit enim bibendum blandit.
+            Integer eu leo ac est aliquet imperdiet. Quisque nec justo id augue posuere malesuada. Nullam ac metus. Cras non leo
+            ut est placerat condimentum.</p>
+
+            <p class="btn-leer"><a href="#">Seguir leyendo...</a></p>
+        </article>
+        <article>
+            <h2><a href="#">Lorem ipsum dolor sit amet</a></h2>
+            <p class="info">
+                <span class="fecha">dd-mm-aaaa 00:00</span>
+                <span class="categoria"><a href="#">diseño</a></span>
+                <span class="autor"><a href="#">Nombre Apellido</a></span>
+                <span class="comentarios"><a href="#">Añadir comentario</a></span>
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam pellentesque enim blandit enim bibendum blandit.
+            Integer eu leo ac est aliquet imperdiet. Quisque nec justo id augue posuere malesuada. Nullam ac metus. Cras non leo
+            ut est placerat condimentum.</p>
+
+            <p class="btn-leer"><a href="#">Seguir leyendo...</a></p>
+        </article>
+        <article>
+            <h2><a href="#">Lorem ipsum dolor sit amet</a></h2>
+            <p class="info">
+                <span class="fecha">dd-mm-aaaa 00:00</span>
+                <span class="categoria"><a href="#">diseño</a></span>
+                <span class="autor"><a href="#">Nombre Apellido</a></span>
+                <span class="comentarios"><a href="#">Añadir comentario</a></span>
+            </p>
+
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam pellentesque enim blandit enim bibendum blandit.
+            Integer eu leo ac est aliquet imperdiet. Quisque nec justo id augue posuere malesuada. Nullam ac metus. Cras non leo
+            ut est placerat condimentum.</p>
+            <p class="btn-leer"><a href="#">Seguir leyendo...</a></p>
+        </article>
+    </section>
+    <!-- Contenido relacionado-->
+    <aside>
+        <!-- Sobre mi -->
+        <h3>Sobre mí</h3>
+        <figure>
+            <img src="avatar.png" alt="Mi foto" width="50px">
+        </figure>
+        <p><strong>Nombre apellidos</strong><br />
+        Edad<br />
+        Ciudad de residencia<br />
+        <a href="#">Mi perfil público</a></p>
+
+        <h3>Categorias</h3>
+        <ul>
+            <li><a href="#">Categoria 1</a></li>
+            <li><a href="#">Categoria 2</a></li>
+            <li><a href="#">Categoria 3</a></li>
+            <li><a href="#">Categoria 4</a></li>
+        </ul>
+        <h3>Archivos</h3>
+        <ul>
+            <li><a href="#">Enero 2016</a></li>
+            <li><a href="#">Febrero 2016</a></li>
+            <li><a href="#">Marzo 2016</a></li>
+            <li><a href="#">Abril 2016</a></li>
+        </ul>
+    </aside>
+    <!-- Pie de pagina -->
+    <footer>
+        <p>&copy MONSTER 2019 Emergentes I </p>
+    </footer>
+</div>
+</body>
+</html>
